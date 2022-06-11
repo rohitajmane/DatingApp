@@ -1,6 +1,6 @@
 using Microsoft.OpenApi.Models;
 
-namespace API
+namespace DatingApp.API
 {
     public class Startup
     {

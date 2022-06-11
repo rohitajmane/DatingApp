@@ -1,4 +1,4 @@
-namespace API
+namespace DatingApp.API
 {
     public class Program
     {
