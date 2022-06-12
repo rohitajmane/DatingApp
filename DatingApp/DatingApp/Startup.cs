@@ -19,8 +19,10 @@ namespace DatingApp.API
 
             services.AddDbContext<DataContext>(option =>
             {
-                option.UseSqlite(_config.GetConnectionString("DefaultConnection"));
+                //option.UseSqlite(_config.GetConnectionString("DefaultConnection"));
+                option.UseSqlServer(_config.GetConnectionString("LocalSQLServer"));
             });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
