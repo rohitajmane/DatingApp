@@ -11,11 +11,10 @@ export class AppComponent implements OnInit {
   users: any;
 
   constructor(private http: HttpClient) {
-    this.getUsers();
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.getUsers();
   }
 
   getUsers() {
